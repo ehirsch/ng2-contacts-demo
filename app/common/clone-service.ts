@@ -17,7 +17,7 @@ export class CloneService<T> {
   }
 
   commitChanges () {
-    Object.assign(this.originalItem, this.currentItem);;
+    Object.assign(this.originalItem, this.currentItem);
   }
 
   clone (item: T) :T {

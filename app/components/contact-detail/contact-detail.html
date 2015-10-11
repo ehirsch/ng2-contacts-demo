@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col s12 m7">
+    <div class="card">
+      <div class="card-image">
+        <img [src]="contact.image">
+        <span class="card-title">{{contact.firstname}} {{contact.lastname}}</span>
+      </div>
+      <div class="card-content">
+        <p><span>{{contact.street}}</span></p>
+        <p><span>{{contact.zip}}</span> <span>{{contact.city}}</span></p>
+      </div>
+      <div class="card-action">
+        <a [router-link]="['/List']">Zurück</a>
+        <a [router-link]="['/Edit', {id:contact.id}]">Bearbeiten</a>
+      </div>
+    </div>
+  </div>
+</div>

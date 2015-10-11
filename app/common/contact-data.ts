@@ -19,12 +19,12 @@ export let CONTACT_DATA = [
     },
     {
       id: 3,
-      firstname: 'Nicole',
-      lastname: 'Hansen',
-      street: '2058 high street',
-      zip: '65222',
-      city: 'Athlone',
-      image: 'images/3.jpg'
+      firstname: 'Eike',
+      lastname: 'Hirsch',
+      street: 'Bahnhofstr. 6',
+      zip: '30890',
+      city: 'Barsinghausen',
+      image: 'images/2.jpg'
     },
     {
       id: 4,

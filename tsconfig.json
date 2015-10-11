@@ -1,5 +1,5 @@
 {
-    "version": "1.6.0",
+    "version": "1.6.4",
     "compilerOptions": {
         "target": "es5",
         "module": "commonjs",
@@ -14,6 +14,10 @@
     "files": [
         "./app/common/clone-service.ts",
         "./app/common/contact-data.ts",
+        "./app/common/contact-service.ts",
+        "./app/components/contact-list/contact-list.ts",
+        "./app/components/contact-editor/contact-editor.ts",
+        "./app/components/contact-detail/contact-detail.ts",
         "./app/contacts-app.ts",
         "./app/init.ts",
         "./app/models/contact.ts",
