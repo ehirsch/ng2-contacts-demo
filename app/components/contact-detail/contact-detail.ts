@@ -1,13 +1,11 @@
-import {Component, View} from 'angular2/angular2';
+import {Component} from 'angular2/angular2';
 
 import {Contact} from '../../models/contact'
 import {ContactService} from "../../common/contact-service";
 import {RouteParams, Router} from "angular2/router";
 
 @Component({
-  selector: 'contact-editor'
-})
-@View({
+  selector: 'contact-editor',
   templateUrl: './components/contact-detail/contact-detail.html'
 })
 export class ContactDetail {

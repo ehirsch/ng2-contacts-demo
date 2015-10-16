@@ -1,12 +1,10 @@
-import {Component, View, CORE_DIRECTIVES} from 'angular2/angular2'
+import {Component, CORE_DIRECTIVES} from 'angular2/angular2'
 import {ContactService} from "../../common/contact-service";
 import {Contact} from "../../models/contact";
 import {Router} from "angular2/router";
 
 @Component({
-  selector: 'contact-list'
-})
-@View({
+  selector: 'contact-list',
   directives: [CORE_DIRECTIVES],
   templateUrl: './components/contact-list/contact-list.html'
 })
