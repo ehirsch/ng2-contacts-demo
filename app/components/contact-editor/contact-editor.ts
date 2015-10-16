@@ -2,7 +2,7 @@ import {Component, View, FORM_DIRECTIVES} from 'angular2/angular2';
 
 import {Contact} from '../../models/contact'
 import {ContactService} from "../../common/contact-service";
-import {RouteParams, ROUTER_DIRECTIVES, Router} from "angular2/router";
+import {RouteParams, Router} from "angular2/router";
 import {CloneService} from "../../common/clone-service";
 
 @Component({
@@ -10,7 +10,7 @@ import {CloneService} from "../../common/clone-service";
   bindings: [CloneService]
 })
 @View({
-  directives: [ROUTER_DIRECTIVES, FORM_DIRECTIVES],
+  directives: [FORM_DIRECTIVES],
   templateUrl: './components/contact-editor/contact-editor.html'
 })
 export class ContactEditor {

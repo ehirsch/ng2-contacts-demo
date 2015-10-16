@@ -1,6 +1,6 @@
 <ul class="collection">
   <li *ng-for="#contact of contacts" class="collection-item avatar">
-    <a [router-link]="['/Detail', {id:contact.id}]">
+    <a (click)="showDetail(contact.id)">
       <img [src]="contact.image" class="circle">
       <span>{{contact.firstname}}</span>
       <span>{{contact.lastname}}</span>

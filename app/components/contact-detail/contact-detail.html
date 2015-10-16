@@ -10,8 +10,8 @@
         <p><span>{{contact.zip}}</span> <span>{{contact.city}}</span></p>
       </div>
       <div class="card-action">
-        <a [router-link]="['/List']">Zurück</a>
-        <a [router-link]="['/Edit', {id:contact.id}]">Bearbeiten</a>
+        <a (click)="back()">Zurück</a>
+        <a (click)="edit(contact.id)">Bearbeiten</a>
       </div>
     </div>
   </div>
