@@ -1,4 +1,4 @@
-import {Component} from 'angular2/angular2';
+import {Component} from 'angular2/core';
 
 import {Contact} from '../../models/contact'
 import {ContactService} from "../../common/contact-service";

@@ -1,4 +1,4 @@
-import {Component, CORE_DIRECTIVES} from 'angular2/angular2'
+import {Component, CORE_DIRECTIVES} from 'angular2/core'
 import {ContactService} from "../../common/contact-service";
 import {Contact} from "../../models/contact";
 import {Router} from "angular2/router";

@@ -1,5 +1,6 @@
-import {Component, bootstrap, bind} from 'angular2/angular2';
-import {ROUTER_BINDINGS, RouteConfig, ROUTER_DIRECTIVES, ROUTER_PRIMARY_COMPONENT} from 'angular2/router'
+import {bootstrap} from 'angular2/bootstrap';
+import {Component, provide} from 'angular2/core';
+import {ROUTER_PROVIDERS, RouteConfig, ROUTER_DIRECTIVES, ROUTER_PRIMARY_COMPONENT} from 'angular2/router'
 
 import {Contact} from './models/contact';
 import {ContactService} from './common/contact-service';
@@ -30,4 +31,4 @@ class ContactsApp {
 
 }
 
-bootstrap(ContactsApp, [ContactService, ROUTER_BINDINGS, bind(ROUTER_PRIMARY_COMPONENT).toValue(ContactsApp)]);
+bootstrap(ContactsApp, [ContactService, ROUTER_PROVIDERS, provide(ROUTER_PRIMARY_COMPONENT, {useValue:ContactsApp})]);

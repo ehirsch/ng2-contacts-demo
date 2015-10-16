@@ -1,4 +1,4 @@
-import {Component, FORM_DIRECTIVES} from 'angular2/angular2';
+import {Component, FORM_DIRECTIVES} from 'angular2/core';
 
 import {Contact} from '../../models/contact'
 import {ContactService} from "../../common/contact-service";
@@ -7,7 +7,7 @@ import {CloneService} from "../../common/clone-service";
 
 @Component({
   selector: 'contact-editor',
-  bindings: [CloneService],
+  providers: [CloneService],
   directives: [FORM_DIRECTIVES],
   templateUrl: './components/contact-editor/contact-editor.html'
 })
